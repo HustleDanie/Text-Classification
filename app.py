@@ -1,6 +1,9 @@
 import streamlit as st
 from transformers import pipeline
 
+# ✅ Must be the first Streamlit command
+st.set_page_config(page_title="Multi-Task NLP Classifier", layout="centered")
+
 @st.cache_resource
 def load_models():
     return {
@@ -13,7 +16,6 @@ def load_models():
 
 models = load_models()
 
-st.set_page_config(page_title="Multi-Task NLP Classifier", layout="centered")
 st.title("🧠 Multi-Task Text Classification App")
 st.markdown("Classify text into **Spam**, **Topic**, **Intent**, **Language**, or **News Category** using Hugging Face Transformers.")
 
