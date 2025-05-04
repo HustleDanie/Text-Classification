@@ -7,8 +7,8 @@ st.set_page_config(page_title="Multi-Task NLP Classifier", layout="centered")
 @st.cache_resource
 def load_models():
     return {
-        "spam": pipeline("text-classification", model="mariagrandury/roberta-base-finetuned-sms-spam-detection"),
-        #"topic": pipeline("text-classification", model="textattack/distilbert-base-uncased-ag-news"),
+        #"spam": pipeline("text-classification", model="mariagrandury/roberta-base-finetuned-sms-spam-detection"),
+        "topic": pipeline("text-classification", model="textattack/distilbert-base-uncased-ag-news"),
         #"intent": pipeline("text-classification", model="Falconsai/intent_classification"),
         #"language": pipeline("text-classification", model="papluca/xlm-roberta-base-language-detection"),
         #"news": pipeline("text-classification", model="mrm8488/distilroberta-finetuned-age_news-classification")
