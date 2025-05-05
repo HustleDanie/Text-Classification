@@ -42,7 +42,6 @@ elif task == "topic":
     - **Business**  
     - **Sci/Tech**
 
-    Model: `textattack/distilbert-base-uncased-ag-news`
     """)
 
 text = st.text_area("✍️ Enter your text here:")
